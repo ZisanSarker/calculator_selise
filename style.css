@@ -3,3 +3,24 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 0.75rem;
 }
+
+.btn {
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #333;
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.equal {
+  grid-row: span 2;
+  background: var(--accent);
+  color: #000;
+}
+
+.zero {
+  grid-column: span 2;
+}
