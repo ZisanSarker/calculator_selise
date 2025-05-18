@@ -2,8 +2,10 @@ const display = document.getElementById("display");
 let currentInput = "";
 
 function updateDisplay() {
-  const displayText = currentInput.slice(-7) || "0";
-  display.textContent = displayText;
+  display.textContent = currentInput || "0";
+  requestAnimationFrame(() => {
+    display.scrollLeft = display.scrollWidth;
+  });
 }
 
 function addToInput(value) {
