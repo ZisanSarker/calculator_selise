@@ -2,7 +2,8 @@ const display = document.getElementById("display");
 let currentInput = "";
 
 function updateDisplay() {
-  display.textContent = currentInput || "0";
+  const displayText = currentInput.slice(-7) || "0";
+  display.textContent = displayText;
 }
 
 function addToInput(value) {
@@ -22,7 +23,7 @@ function deleteLast() {
 
 function calculate() {
   try {
-    currentInput = eval(currentInput);
+    currentInput = String(eval(currentInput));
   } catch (error) {
     currentInput = "Error";
   }
@@ -45,8 +46,5 @@ buttons.forEach(button => {
     } else if (action === "calculate") {
       calculate();
     }
-    setTimeout(() => {
-      button.blur();
-    }, 1000);
   });
 });
