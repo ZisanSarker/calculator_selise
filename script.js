@@ -45,5 +45,8 @@ buttons.forEach(button => {
     } else if (action === "calculate") {
       calculate();
     }
+    setTimeout(() => {
+      button.blur();
+    }, 1000);
   });
 });
