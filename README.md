@@ -22,7 +22,7 @@ You can find the source code here:
 
 ## 📸 Screenshot
 
-![Calculator Screenshot](./screenshot.png)  
+![Calculator Screenshot](./Screenshot.png)  
 > Make sure to replace `screenshot.png` with your actual screenshot file name if it's different.
 
 ## 🚀 Getting Started
